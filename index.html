@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix and Flip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fix and Flip Calculator</h1>
+
+        <!-- Purchase Details Section -->
+        <section id="purchase-details">
+            <h2>Purchase Details</h2>
+            <label for="property-address">Property Address:</label>
+            <input type="text" id="property-address" placeholder="Enter property address" required>
+            <label for="purchase-price">Purchase Price ($):</label>
+            <input type="number" id="purchase-price" placeholder="Enter purchase price" required>
+
+            <label for="rehab-costs">Rehab Costs ($):</label>
+            <input type="number" id="rehab-costs" placeholder="Enter rehab costs" required>
+
+            <label for="purchase-quiet-costs">Purchase Quiet Costs ($):</label>
+            <input type="number" id="purchase-quiet-costs" placeholder="Enter quiet costs" required>
+        </section>
+
+        <!-- Financing Details Section -->
+        <section id="financing-details">
+            <h2>Financing Details</h2>
+            <label for="hard-money-ltv">Hard Money Loan LTV (%):</label>
+            <input type="number" id="hard-money-ltv" placeholder="Enter hard money loan LTV" required>
+
+            <label for="construction-loan-ltv">Construction Loan LTV (%):</label>
+            <input type="number" id="construction-loan-ltv" placeholder="Enter construction loan LTV" required>
+
+            <label for="hard-money-rate">Hard Money Rate (%):</label>
+            <input type="number" id="hard-money-rate" placeholder="Enter hard money rate" required>
+
+            <label for="hard-money-points">Hard Money Points (%):</label>
+            <input type="number" id="hard-money-points" placeholder="Enter hard money points" required>
+
+            <label for="hard-money-fees">Hard Money Misc Fees ($):</label>
+            <input type="number" id="hard-money-fees" placeholder="Enter misc fees" required>
+        </section>
+
+        <!-- Project Costs Section -->
+        <section id="project-costs">
+            <h2>Project Costs</h2>
+            <label for="misc-expenses">Misc Expenses ($):</label>
+            <input type="number" id="misc-expenses" placeholder="Enter misc expenses" required>
+
+            <label for="project-duration">Project Duration (Months):</label>
+            <input type="number" id="project-duration" placeholder="Enter project duration" required>
+        </section>
+
+        <!-- Sales Details Section -->
+        <section id="sales-details">
+            <h2>Sales Details</h2>
+            <label for="arv">ARV (Final Sales Price) ($):</label>
+            <input type="number" id="arv" placeholder="Enter ARV" required>
+
+            <label for="closing-quiet-costs">Closing Quiet Costs ($):</label>
+            <input type="number" id="closing-quiet-costs" placeholder="Enter closing quiet costs" required>
+
+            <label for="seller-agent-commission">Seller Agent Commission (%):</label>
+            <input type="number" id="seller-agent-commission" placeholder="Enter seller agent commission" required>
+
+            <label for="buyer-agent-commission">Buyer Agent Commission (%):</label>
+            <input type="number" id="buyer-agent-commission" placeholder="Enter buyer agent commission" required>
+
+            <label for="tax-rate">Tax Rate (%):</label>
+            <input type="number" id="tax-rate" placeholder="Enter tax rate" required>
+        </section>
+
+        <!-- Calculate Button -->
+        <button id="calculate-button">Calculate</button>
+
+        <!-- Results Section -->
+        <section id="results">
+            <h2>Results</h2>
+            <div id="output"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
